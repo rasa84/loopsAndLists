@@ -120,27 +120,41 @@ from itertools import count
 # print("************************************")
 # print("------------14 uzd.----------------")
 # words = []
-# words.append(input("Iveskite pirma zodi: "))
-# words.sort()
-# print(words)
-# words.append(input("Iveskite antra zodi: "))
-# words.sort()
-# print(words)
-# words.append(input("Iveskite trecia zodi: "))
-# words.sort()
-# print(words)
-# words.append(input("Iveskite ketvirta zodi: "))
-# words.sort()
-# print(words)
+# words1 = []
+# words1.append(input("Iveskite pirma zodi: "))
+# words1.append(input("Iveskite pirmo zodzio reiksme: "))
+# words.append(words1)
+# sorted_words = sorted(words, key=lambda x: x[0])
+# print(sorted_words)
+# words2 = []
+# words2.append(input("Iveskite antra zodi: "))
+# words2.append(input("Iveskite antro zodzio reiksme: "))
+# words.append(words2)
+# sorted_words = sorted(words, key=lambda x: x[0])
+# print(sorted_words)
+# words3 = []
+# words3.append(input("Iveskite trecia zodi: "))
+# words3.append(input("Iveskite trecio zodzio reiksme: "))
+# words.append(words3)
+# sorted_words = sorted(words, key=lambda x: x[0])
+# print(sorted_words)
 
 print("************************************")
 print("------------15 uzd.----------------")
-balance = [3, 4, 20, 89, 100, 2, 55, 45, 1, 0]
+balance = [["bulves", 3],
+           ["morkos", 4],
+           ["kriauses", 20],
+           ["saldainiai", 89],
+           ["kopustai", 100],
+           ["obuoliai", 2],
+           ["ropes", 55],
+           ["pienas", 45],
+           ["batonas", 1]]
 mod_balance = []
-mod_balance2 = []
-for residual in balance:
-    if residual < 5:
-        mod_balance.append(residual)
+for i in range(len(balance)):
+    if balance[i][1] < 5:
+        mod_balance.append(balance[i])
 print(f"Likuciai, kuriu like maziau nei 5 vnt.: {mod_balance}")
-balance.sort()
-print(f"Triju prekiu likuciai, kuriu like maziausiai: {balance[:3]}")
+if len(mod_balance) < 1:
+    sorted_balance = sorted(balance, key=lambda x: x[1])
+    print(f"Triju prekiu likuciai, kuriu like maziausiai: {sorted_balance[:3]}")
