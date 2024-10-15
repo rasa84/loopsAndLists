@@ -158,6 +158,149 @@ import random
 # if len(mod_balance) < 1:
 #     sorted_balance = sorted(balance, key=lambda x: x[1])
 #     print(f"Triju prekiu likuciai, kuriu like maziausiai: {sorted_balance[:3, 1]}")
+#
+# print("************************************")
+# print("------------16 uzd.----------------")
+# numbers = ['one', 'two', 'three', 'four', 'five']
+# comma_separated_numbers = ""
+# pipe_separated_numbers = ""
+# space_separated_numbers = ""
+# for num in numbers:
+#     comma_separated_numbers += num + ", "
+#     pipe_separated_numbers += num + "|"
+#     space_separated_numbers += num + " "
+# print(f"{comma_separated_numbers[:-2]}")
+# print(f"{pipe_separated_numbers[:-1]}")
+# print(f"{space_separated_numbers[:-1]}")
+
+# print("************************************")
+# print("------------17 uzd.----------------")
+# numbers = ['python', 'web', 'file1.py', 'file2.py', 'file3.py']
+# language, env, *files = numbers
+# print(f"{language}, {env}, {files}")
+
+# print("************************************")
+# print("------------18 uzd.----------------")
+# team_members = ['Jonas Jonaitis', 'Petras Petraitis', 'Agne Agnyte']
+# print("prie projekto dirba šie komandos nariai:")
+# for mem in team_members:
+#     print(mem)
+
+# print("************************************")
+# print("------------19 uzd.----------------")
+# topics = ["Conditional statements", "Arrays", "Loops"]
+# print("We have already learned: ")
+# for index in range(len(topics)):
+#     print(f"{index + 1}-a tema: {topics[index]}")
+# print("We have already learned: ")
+# index = 0
+# while index < len(topics):
+#     print(f"{index + 1}-a tema: {topics[index]}")
+#     index += 1
+
+# print("************************************")
+# print("------------20 uzd.----------------")
+# programs = ["JavaScript mokymai", "Ilgieji Javascript \"Full-stack\" mokymai", "Nuo JAVA pagrindų iki mobilių aplikacijų kūrimo", "DevOps + Dirbtinis intelektas (AI)"]
+# for p in programs:
+#     print(p)
+
+# print("************************************")
+# print("------------21 uzd.----------------")
+# countries = ["Lithuania", "Latvia", "Estonia"]
+# for c in countries:
+#     print(f"Country {c}")
+
+# print("************************************")
+# print("------------22 uzd.----------------")
+# shopping_card = ["milk", "cheese", "carrots"]
+# print(f"Total: {len(shopping_card)}")
+# for i in range(len(shopping_card)):
+#     print(f"nr {i + 1} product: {shopping_card[i]}")
+
+# print("************************************")
+# print("------------23 uzd.----------------")
+# grades = [10, 9, 8, 2, 6, 4, 7]
+# grades.sort()
+# grades.reverse()
+# for g in grades:
+#     print(f"{g} - {"puikiai" if g == 10 else "labai gerai" if g == 9 else 'gerai' if g == 8 else 'vidutiniskai' if g == 7 else "patenkinamai arba nepatenkinamai"}")
+
+# print("************************************")
+# print("------------24 uzd.----------------")
+# count = int(input("Kiek atsitiktiniu skaiciu turi buti sugeneruota: "))
+# nums = []
+# for i in range(count):
+#     nums.append(random.randint(1, 10))
+# print(nums)
+# for n in nums:
+#     print(f"{n} {n**2}")
+
+# print("************************************")
+# print("------------25 uzd.----------------")
+# list = ["vienas", "du", "trys", "four", "five"]
+# print(list)
+# list[0] = "one"
+# list[1] = "two"
+# list[2] = "three"
+# print(list)
+
+# print("************************************")
+# print("------------26 uzd.----------------")
+# numbers = [8, 5, 7, 1, 6, 8, 10, 9]
+# print("Lyginiai skaiciai: ")
+# for n in numbers:
+#     if n % 2 == 0:
+#         print(n)
+# print("Nelyginiai skaiciai: ")
+# for n in numbers:
+#     if n % 2 != 0:
+#         print(n)
+# print("Visi skaičiai, kurie dalinasi iš 3: ")
+# for n in numbers:
+#     if n % 3 == 0:
+#         print(n)
+
+# print("************************************")
+# print("------------27 uzd.----------------")
+# nums = [random.randint(1,10), random.randint(1,10), random.randint(1,10), random.randint(1,10), random.randint(1,10)]
+# print(nums)
+# sum = 0
+# for n in nums:
+#     sum += n
+# average = sum / len(nums)
+# print(f"Vidurkis: {average}")
+# print("Skaiciai didesni nei vidurkis")
+# for n in nums:
+#     if n > average:
+#         print(n)
+#
+# print("************************************")
+# print("------------28 uzd.----------------")
+# count = int(input("Kiek atsitiktiniu skaiciu turi buti sugeneruota: "))
+# nums = []
+# for i in range(count):
+#     nums.append(random.randint(1, 10))
+# print(nums)
+# for n in nums:
+#     divisors = ""
+#     for i in range(n):
+#         if n % (i + 1) == 0:
+#             divisors += str(i + 1) + ", "
+#     print(f"skaicius {n} dalinasi is {divisors[:-2]}")
+
+# print("************************************")
+# print("------------29 uzd.----------------")
+# count = int(input("Iveskite, kiek zodziu norite ivesti: "))
+# words = []
+# for i in range(count):
+#     words.append(input("Iveskite zodi: "))
+# print(words)
+
+# print("************************************")
+# print("------------30 uzd.----------------")
+# words = ["apple", "carrot", "milk"]
+# for w in words:
+#     print(f"{w} - {len(w)}")
 
 # print("************************************")
 # print("------------Papildoma 14.----------------")
@@ -246,7 +389,7 @@ import random
 #     for i in range(start, end, step):
 #         if even == 'L' and i % 2 == 0:
 #             print(i)
-#         elif even == 'N' and i % 2 != 0:
+#         if even == 'N' and i % 2 != 0:
 #             print(i)
 
 # print("************************************")
@@ -476,39 +619,34 @@ import random
 
 # print("************************************")
 # print("------------13 uzd.----------------")
-finished = False
-while finished == False:
-    min = int(input("Iveskite maziausia galima skaiciu: "))
-    max = int(input("Iveskite didziausia galima skaiciu: "))
-    secret = random.randint(min, max)
-    print(f"Secret number: {secret}")
-    need_help = input("Ar norite pagalbos (t/n)? ")
-    if (need_help != 't' and need_help != 'n'):
-        continue
-    repeat_endless = input("Ar norite speti neribota sk. (t/n)? ")
-    if (repeat_endless != 't' and repeat_endless != 'n'):
-        continue
-    guess_count = 0
-    guess_count_max = 0
-    if repeat_endless == 'n':
-        guess_count_max = int(input("Iveskite, kiek spejimu leidziama: "))
-    guessed = False
-    while guessed == False and (repeat_endless == 't' or guess_count < guess_count_max):
-        guessed_number = int(input("Spekite skaiciu: "))
-        if guessed_number != secret:
-            if need_help == 't':
-                if (guessed_number < secret):
-                    print("Iveskite didesni skaiciu")
-                else:
-                    print("Iveskite mazesni skaiciu")
-            if repeat_endless == 'n':
-                guess_count += 1
-        else:
-            guessed = True
-            print("Atspejote!!!")
-    finished = True
-
-
-
-
-
+# finished = False
+# while finished == False:
+#     min = int(input("Iveskite maziausia galima skaiciu: "))
+#     max = int(input("Iveskite didziausia galima skaiciu: "))
+#     secret = random.randint(min, max)
+#     print(f"Secret number: {secret}")
+#     need_help = input("Ar norite pagalbos (t/n)? ")
+#     if (need_help != 't' and need_help != 'n'):
+#         continue
+#     repeat_endless = input("Ar norite speti neribota sk. (t/n)? ")
+#     if (repeat_endless != 't' and repeat_endless != 'n'):
+#         continue
+#     guess_count = 0
+#     guess_count_max = 0
+#     if repeat_endless == 'n':
+#         guess_count_max = int(input("Iveskite, kiek spejimu leidziama: "))
+#     guessed = False
+#     while guessed == False and (repeat_endless == 't' or guess_count < guess_count_max):
+#         guessed_number = int(input("Spekite skaiciu: "))
+#         if guessed_number != secret:
+#             if need_help == 't':
+#                 if (guessed_number < secret):
+#                     print("Iveskite didesni skaiciu")
+#                 else:
+#                     print("Iveskite mazesni skaiciu")
+#             if repeat_endless == 'n':
+#                 guess_count += 1
+#         else:
+#             guessed = True
+#             print("Atspejote!!!")
+#     finished = True
