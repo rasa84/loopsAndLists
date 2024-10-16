@@ -21,7 +21,6 @@
 # grades.append(input("Iveskite 4-a pazymi: "))
 # print(f"Visi pazymiai: {grades}")
 # print(f"Is viso pazymiu: {len(grades)}")
-import random
 
 # print("************************************")
 # print("-------------4 uzd.----------------")
@@ -303,6 +302,198 @@ import random
 #     print(f"{w} - {len(w)}")
 
 # print("************************************")
+# print("------------31 uzd.----------------")
+# count = int(input("Kiek pazymiu norite ivesti: "))
+# negative_grades = []
+# sum = 0
+# negative_count = 0
+# for i in range(count):
+#     grade = int(input("Iveskite pazymi: "))
+#     sum += grade
+#     if (grade < 5):
+#         negative_count += 1
+#         negative_grades.append(grade)
+# print(f"Vidurkis: {sum / count}")
+# print(f"Neigiamu pazymiu kiekis: {negative_count}" if negative_count > 0 else "")
+# print("Neigiami pažymiai: " + str(negative_grades) if negative_count > 0 else "")
+
+# print("************************************")
+# print("------------32 uzd.----------------")
+# words = ["apple", "carrot", "milk", "soup"]
+# words_and_lengths = []
+# for w in words:
+#     words_and_lengths.append([w, len(w)])
+# sorted_words = sorted(words_and_lengths, key=lambda x: x[1])
+# print(f"Visi zodziai su raidziu kiekiais: {words_and_lengths}")
+# print(f"Trumpiausias zodis: {sorted_words[0][0]}. Raidziu kiekis: {sorted_words[0][1]}")
+# print(f"Ilgiausias zodis: {sorted_words[-1][0]}. Raidziu kiekis: {sorted_words[-1][1]}")
+
+# print("************************************")
+# print("------------33 uzd.----------------")
+# numbers = []
+# sum = 0
+# numbers_bellow_average = []
+# numbers_bellow_average_count = 0
+# numbers_bellow_average_sum = 0
+# numbers_above_average = []
+# numbers_above_average_count = 0
+# numbers_above_average_sum = 0
+# for num in range(1, 101):
+#     numbers.append(num)
+#     sum += num
+# average = sum / 100
+# numbers.sort()
+# min = numbers[0]
+# max = numbers[-1]
+# print(f"Visi skaiciai: {numbers}")
+# print(f"Vidurkis: {average}")
+# print(f"Min: {min}")
+# print(f"Max: {max}")
+# round_average = int(average)
+# numbers_bellow_average_count = round_average - 1;
+# for num in range(1, round_average):
+#     numbers_bellow_average.append(num)
+#     numbers_bellow_average_sum += num
+# print(f"Zemesni nei vidurkis: {numbers_bellow_average}")
+# print(f"Ju vidurkis: {round(numbers_bellow_average_sum / numbers_bellow_average_count, 2)}")
+# numbers_above_average_count = 100 - round_average - 1;
+# for num in range(round_average + 1, 101):
+#     numbers_above_average.append(num)
+#     numbers_above_average_sum += num
+# print(f"Didesni nei vidurkis: {numbers_above_average}")
+# print(f"Ju vidurkis: {round(numbers_above_average_sum / numbers_above_average_count, 2)}")
+
+# print("************************************")
+# print("------------34 uzd.----------------")
+# words = ["apple", "carrot", "milk"]
+# word_lengths = []
+# for w in words:
+#     word_lengths.append(len(w))
+# word_lengths.sort()
+# print(word_lengths[-1] - word_lengths[0])
+
+# print("************************************")
+# print("------------35 uzd.----------------")
+# count = int(input("Kiek pazymiu norite ivesti: "))
+# grades1 = []
+# grades2 = []
+# sum1 = 0
+# sum2 = 0
+# negative_count1 = 0
+# negative_count2 = 0
+#
+# for i in range(count):
+#     grade = int(input("Iveskite 1-o studento pazymi: "))
+#     sum1 += grade
+#     if (grade < 5):
+#         negative_count1 += 1
+#
+# for i in range(count):
+#     grade = int(input("Iveskite 2-o studento pazymi: "))
+#     sum2 += grade
+#     if (grade < 5):
+#         negative_count2 += 1
+# average1 = sum1 / count
+# average2 = sum2 / count
+# print(f"Pirmo studento vidurkis {average1} yra geresnis, nes antro studento tik {average2}"
+#       if average1 > average2 else f"Antro studento vidurkis {average2} yra geresnis, nes pirmo studento tik {average1}"
+# if average1 < average2 else "Vidurkiai lygus")
+# print(f"Pirmas studentas turi neigiamu pazymiu " if negative_count1 > 0 else "",
+#       end="\n" if negative_count1 > 0 else "")
+# print(f"Antras studentas turi neigiamu pazymiu " if negative_count2 > 0 else "", end="")
+
+# print("************************************")
+# print("------------36 uzd.----------------")
+# nums = []
+# sum = 0
+# for i in range(20):
+#     number = random.randint(1, 20)
+#     nums.append(number)
+#     if number % 4 == 0:
+#         sum += number
+# print(nums)
+# print(f"Skaiciu, kurie dalinasi is 4, suma: {sum}")
+
+# print("************************************")
+# print("------------37 uzd.----------------")
+# numbers = [10, 5, 8, 9]
+# for num in numbers:
+#     if num % 2 == 0:
+#         print(f"{num} {num ** 2}")
+#     else:
+#         print(num)
+
+# print("************************************")
+# print("------------38 uzd.----------------")
+# grades = [10, 5, 3, 2, 8, 4, 9]
+# for g in grades:
+#     print(f"{g} - teigiamas" if g > 4 else f"{g} - neigiamas. Iki teigiamo trūko {5 - g}")
+
+# print("************************************")
+# print("------------39 uzd.----------------")
+# words = ["one", "two", "three"]
+# total = 0
+# for w in words:
+#     print(f"{w} {len(w)}")
+#     total += len(w)
+# print(f"Is viso raidziu: {total}")
+
+# print("************************************")
+# print("------------40 uzd.----------------")
+# nums = [8, 5, 9, 3, 7]
+# print(nums)
+# sum = 0
+# count = 0
+# for n in nums:
+#     if n % 3 == 0:
+#         sum += n
+#         count += 1
+# print(f"Suma: {sum}. Vidurkis: {sum / count}")
+
+# print("************************************")
+# print("------------41 uzd.----------------")
+# files = ["hi.py", "labas.txt", "data.json", "something.java"]
+# appropriate_files = []
+# for f in files:
+#     if f.endswith("txt") or f.endswith("json"):
+#         appropriate_files.append(f)
+# print(f"Visi failai: {files}")
+# print(f"Atrinkti failai: {appropriate_files}")
+
+# print("************************************")
+# print("------------42 uzd.----------------")
+# errors = [["ui87", "Grafinės sąsajos klaida navigacijoje"],
+#          ["sys12", "Trūksta operatyviosios atminties sistemoje"],
+#          ["error999", "Iš esmės kažkas labai blogai"]]
+# for e in errors:
+#     print(e[1])
+
+# print("************************************")
+# print("------------43 uzd.----------------")
+# balance = [
+#     ["kopustai", 74],
+#     ["morkos", 54],
+#     ["agurkai", 32]]
+# print(balance)
+# list = []
+# for b in balance:
+#     days = int(round(b[1] / 5, 0))
+#     print(f"Likutis {b[1]} vnt., užteks maždaug {days} dienų")
+#     if days <= 7:
+#         list.append(b[0])
+# print(f"Siu prekiu uzteks savaitei ar maziau: {list}")
+
+# print("************************************")
+# print("------------44 uzd.----------------")
+# words = ["one", "sixteen", "two", "seventeen", "three", "four", "eighteen"]
+# short_words = []
+# for w in words:
+#     if len(w) <5:
+#         short_words.append(w)
+# print(f"Visi zodziai: {words}")
+# print(f"Trumpi zodziai: {short_words}")
+
+# print("************************************")
 # print("------------Papildoma 14.----------------")
 # allowed_guesses = 5
 # secret_number = 7
@@ -381,11 +572,13 @@ import random
 
 # print("************************************")
 # print("------------11 uzd.----------------")
-# start = int(input("Iveskite reziu pradzia: "))
-# end = int(input("Iveskite reziu pabaiga: "))
+# start = -1
+# end = -2
 # step = int(input("Iveskite zingsni: "))
 # even = input("Iveskite, kokius skaicius norite matyti (Lyginiai - L, Nelyginiai - N): ")
-# if start < end:
+# while start > end:
+#     start = int(input("Iveskite reziu pradzia: "))
+#     end = int(input("Iveskite reziu pabaiga: "))
 #     for i in range(start, end, step):
 #         if even == 'L' and i % 2 == 0:
 #             print(i)
@@ -523,13 +716,13 @@ import random
 
 # print("************************************")
 # print("-------------6 uzd.----------------")
-# while True:
+# start = -1
+# end = -2
+# while start >= end:
 #     start = int(input("Iveskite reziu pradzia: "))
 #     end = int(input("Iveskite reziu pabaiga: "))
 #     if start >= end:
 #         print("Rezius ivedete neteisingai, prasau pakartokite is naujo...")
-#     else:
-#         break
 #
 # for i in range(start, end):
 #     if i % 2 == 0:
@@ -556,11 +749,10 @@ import random
 # print("************************************")
 # print("-------------8 uzd.----------------")
 # sum = 0
-# while True:
+# num = -1
+# while num != 0:
 #     num = int(input("Iveskite nauja skaiciu (jei nobenoresite testi, iveskite nuli): "))
 #     sum += num
-#     if num == 0:
-#         break
 # print(f"Suma: {sum}")
 
 # print("************************************")
@@ -591,13 +783,12 @@ import random
 # print("------------11 uzd.----------------")
 # sum = 0
 # count = 0
-# while True:
+# num = -1
+# while num != 0:
 #     num = int(input("Iveskite skaiciu (kai nebenoresite testi, iveskite 0): "))
-#     if num == 0:
-#         break
 #     sum += num
 #     count += 1
-# print(f"Ivestu skaicius suma: {sum}, vidurkis: {sum / count}")
+# print(f"Ivestu skaicius suma: {sum}, vidurkis: {sum / (count - 1)}")
 
 # print("************************************")
 # print("------------12 uzd.----------------")
@@ -605,15 +796,14 @@ import random
 # while repeat == 't':
 #     pazymiu_suma = 0
 #     pazymiu_kiekis = 0
+#     pazymys = -1
 #     print('Iveskite tiek pazymiu kiek norite (atskiriant enter)')
 #     print('Norint baigti irasykite 0')
-#     while True:
+#     while pazymys != 0:
 #         pazymys = int(input('Iveskite pazymi: '))
-#         if pazymys == 0:
-#             break
 #         pazymiu_suma += pazymys
 #         pazymiu_kiekis += 1
-#     vidurkis = round(pazymiu_suma / pazymiu_kiekis, 1)
+#     vidurkis = round(pazymiu_suma / (pazymiu_kiekis - 1), 1)
 #     print('Suvestu pazymiu vidurkis:', vidurkis)
 #     repeat = input('Ar norite testi (t/n)? ')
 
