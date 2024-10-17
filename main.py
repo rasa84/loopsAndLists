@@ -21,6 +21,7 @@
 # grades.append(input("Iveskite 4-a pazymi: "))
 # print(f"Visi pazymiai: {grades}")
 # print(f"Is viso pazymiu: {len(grades)}")
+import random
 
 # print("************************************")
 # print("-------------4 uzd.----------------")
@@ -840,3 +841,156 @@
 #             guessed = True
 #             print("Atspejote!!!")
 #     finished = True
+# #****************************************************************************************************
+# Additional tasks:
+# print("************************************")
+# print("-------------3 uzd.----------------")
+# limit = 25
+# for i in range(limit):
+#     for j in range(limit):
+#         print("*", end="")
+#     print()
+
+# print("************************************")
+# print("-------------4 uzd.----------------")
+# count = 0
+# limit = 25
+# for i in range(limit):
+#     for j in range(limit):
+#         if count == j or (limit - 1 - count) == j:
+#             print("0", end="")
+#         else:
+#             print("*", end="")
+#     print()
+#     count += 1
+
+# print("************************************")
+# print("-------------5 uzd.----------------")
+# print(f"Coat of Arms = 0 (H), Number = 1 (N)")
+# coat_of_arms = 0
+# for i in range(20):
+#     flip_coin = random.randint(0, 1)
+#     print(f"{i+1}-as metimas: ", end="")
+#     print("S" if flip_coin == 1 else "H")
+#     if flip_coin == 0:
+#         coat_of_arms += 1
+#     if coat_of_arms == 3:
+#         break
+
+# coat_of_arms = 0
+# previous_flip = 0
+# i = 0
+# while True:
+#     i += 1
+#     flip_coin = random.randint(0, 1)
+#     print(f"{i}-as metimas: ", end="")
+#     print("S" if flip_coin == 1 else "H")
+#     if flip_coin == 0 and (coat_of_arms == 0 or previous_flip == 0):
+#         coat_of_arms += 1
+#     else:
+#         coat_of_arms = 0
+#     previous_flip = flip_coin
+#     if coat_of_arms == 3:
+#         break
+
+# print("************************************")
+# print("-------------6 uzd.----------------")
+# sum_petras = 0
+# sum_kazys = 0
+# win_score = 222
+# while True:
+#     petras_score = random.randint(10, 20)
+#     sum_petras += petras_score
+#     kazys_score = random.randint(5, 25)
+#     sum_kazys += kazys_score
+#     if sum_kazys >= win_score or sum_petras >= win_score:
+#         break
+# print(f"Petras: {sum_petras}. Kazys: {sum_kazys}")
+# print(f"Partiją laimėjo: ", end="")
+# print("Kazys" if sum_kazys > sum_petras else "Petras" if sum_petras > sum_kazys else "abu")
+
+# print("************************************")
+# print("-------------7 uzd.----------------")
+# limit = 21
+# center = int(limit / 2) + 1
+# line = ""
+# for i in range(center):
+#     for j in range(1, limit + 1):
+#         if j == center or (j <= center + i and j >= center - i):
+#             line += "*"
+#         else:
+#             line += " "
+#     line += "\n"
+# for i in range(center - 2, -1, -1):
+#     for j in range(limit, 0, -1):
+#         if j == center or (j <= center + i and j >= center - i):
+#             line += "*"
+#         else:
+#             line += " "
+#     line += "\n"
+# print(line)
+
+# Tomo kodas:
+# print("\n--- 7 ---")
+# increment = 0
+# for y in range(21):
+#     line=""
+#     for x in range(21):
+#         if 10-increment<=x and x<=10+increment:
+#             line += "*"
+#         else:
+#             line += " "
+#     increment += 1 if y<10 else -1
+#     print(line)
+
+# print("************************************")
+# print("-------------8 uzd.----------------")
+# nail_length = 85
+# for i in range(5):
+#     sum = 0
+#     count = 0
+#     while True:
+#         sum += random.randint(5, 20)
+#         count += 1
+#         if sum >= nail_length:
+#             break
+#     print(f"{i + 1}-a vinis. Reikia smugiu: {count}. Is viso mm: {sum}")
+# for i in range(5):
+#     sum = 0
+#     count = 0
+#     while True:
+#         success = random.randint(0,1) == 1
+#         if success:
+#             sum += random.randint(20, 30)
+#         count += 1
+#         if sum >= nail_length:
+#             break
+#     print(f"{i + 1}-a vinis. Reikia smugiu: {count}. Is viso mm: {sum}")
+
+# print("************************************")
+# print("-------------9 uzd.----------------")
+# line_numbers = ""
+# numbers = random.sample(range(1, 200), 50)
+# print(numbers)
+# for i in numbers:
+#     line_numbers += str(i) + " "
+# line_numbers = line_numbers[:-1]
+# print(line_numbers)
+#
+# numbers2 = map(int, line_numbers.split())
+# print(numbers2)
+# prime_numbers = []
+# for num in numbers2:
+#     is_prime = True
+#     i = 2
+#     while i < num:
+#         if num % i == 0:
+#             is_prime = False
+#             break
+#         i += 1
+#     if is_prime:
+#         prime_numbers.append(num)
+#
+# prime_numbers.sort()
+# s = ' '.join(str(n) for n in prime_numbers)
+# print(s)
